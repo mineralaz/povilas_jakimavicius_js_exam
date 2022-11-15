@@ -43,7 +43,6 @@ function crEl(tagName, destination, elClass, text) {
   destination.append(el);
   return el;
 }
-function createAnswerEl(params) {}
 function generateConvertedAnswer(kg) {
   divEl.innerHTML = "";
   crEl("h2", divEl, "toLb", `${toLb(kg)} lb`);
