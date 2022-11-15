@@ -25,28 +25,39 @@
 }
 .card {
   margin: 3rem;
+  background-color: lightgray;
+  border-radius: 5px;
 }
 .card .carModels {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.4rem;
   align-content: center;
+  background-color: darkgray;
+  border-radius: 5px;
+}
+.carModels :nth-child(even) {
+  background-color: gray;
 }
 
 .card h2,
 p {
   text-align: center;
   margin-bottom: 0.5rem;
-  color: gray;
+  color: whitesmoke;
+
+  border-radius: 5px;
+  padding: 5px;
 }
 .card hr {
   margin-top: 1rem;
 }
 .card h2 {
   font-size: 3rem;
-  color: brown;
+  color: #641717;
   text-decoration: underline;
   padding-bottom: 2rem;
+  background-color: lightgray;
 }
 /* tablet */
 @media screen and (min-width: 768px) {
