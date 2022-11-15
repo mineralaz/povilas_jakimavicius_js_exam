@@ -3,27 +3,75 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
 .wrapper {
   min-height: 100vh;
   min-width: calc(100vw - (100vw - 100%));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .container h1 {
   margin-top: 50px;
   color: #333;
+  text-align: center;
+  font-size: 5rem;
+}
+.card {
+  margin: 3rem;
+}
+.card .carModels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  align-content: center; */
+}
+
+.card h2,
+p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: gray;
+}
+.card h2 {
+  font-size: 3.5rem;
+  color: brown;
+  text-decoration: underline;
+}
+/* tablet */
+@media screen and (min-width: 1024px) {
+  .card h2 {
+    font-size: 1rem;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .card h2 {
+    font-size: 1.5rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+}
+/* wider desktop */
+@media screen and (min-width: 1440px) {
+  .card h2 {
+    font-size: 2rem;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
 }
