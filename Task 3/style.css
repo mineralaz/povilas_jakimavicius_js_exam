@@ -55,14 +55,13 @@
 .output-cointainer #output {
   width: 80%;
   margin-top: 25px;
-  padding: 30px;
+  padding: 10px;
   border-radius: 5px;
   background-color: #fff;
-}
-#output {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .hide {
   display: none;
 }
@@ -72,11 +71,11 @@
   text-align: center;
 }
 .card img {
-  width: 20rem;
+  width: 7rem;
 }
 /* Desktop */
-@media screen and (max-width: 425px) {
-  #output {
+@media screen and (min-width: 768px) {
+  .output-cointainer #output {
     grid-template-columns: repeat(3, 1fr);
   }
   .card img {
@@ -85,19 +84,19 @@
 }
 /* Desktop */
 @media screen and (min-width: 1024px) {
-  #output {
+  .output-cointainer #output {
     grid-template-columns: repeat(4, 1fr);
   }
   .card img {
-    width: 9rem;
+    width: 11rem;
   }
 }
 /* Larger Desktop */
 @media screen and (min-width: 1440px) {
-  #output {
+  .output-cointainer #output {
     grid-template-columns: repeat(5, 1fr);
   }
   .card img {
-    width: 10rem;
+    width: 12rem;
   }
 }
