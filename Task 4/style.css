@@ -21,7 +21,7 @@
   margin-top: 50px;
   color: #333;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .card {
   margin: 3rem;
@@ -29,12 +29,8 @@
 .card .carModels {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  justify-content: center;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 0.4rem;
-  align-content: center; */
+  align-content: center;
 }
 
 .card h2,
@@ -43,35 +39,58 @@ p {
   margin-bottom: 0.5rem;
   color: gray;
 }
+.card hr {
+  margin-top: 1rem;
+}
 .card h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: brown;
   text-decoration: underline;
+  padding-bottom: 2rem;
 }
 /* tablet */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .card .carModels {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4rem;
+  }
+  .card hr {
+    margin-top: 1.5rem;
+  }
   .card h2 {
-    font-size: 1rem;
+    font-size: 3.5rem;
   }
   .container h1 {
-    font-size: 1.5rem;
+    font-size: 4.5rem;
   }
 }
 /* desktop */
 @media screen and (min-width: 1024px) {
+  .card .carModels {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.4rem;
+  }
+  .card hr {
+    margin-top: 1rem;
+  }
   .card h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   .container h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 /* wider desktop */
 @media screen and (min-width: 1440px) {
+  .card .carModels {
+    grid-template-columns: repeat(11, 1fr);
+    gap: 0.4rem;
+  }
+
   .card h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .container h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
